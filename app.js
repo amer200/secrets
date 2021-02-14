@@ -23,7 +23,7 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-mongoose.connect("mongodb+srv://admin-amer:123@cluster0.o9uvt.mongodb.net/secretanonymously", {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
+mongoose.connect("mongodb+srv://admin-amer:123@cluster0.o9uvt.mongodb.net/secretanonymously?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
 const userSchema =  new mongoose.Schema({
   email: String,
