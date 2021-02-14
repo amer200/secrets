@@ -187,6 +187,9 @@
   "engines": {
     "node": "15.3.0"
   },
+  "scripts": {
+   "start": "node index.js"
+},
   "bugs": {
     "url": "https://github.com/amer200/secrets/issues"
   },
